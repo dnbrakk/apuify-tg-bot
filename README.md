@@ -1,11 +1,11 @@
-# Dogefy Telegram bot
-This is the source code of the [Dogefy](https://telegram.me/dogefy_bot) Telegram
+# Apuify Telegram bot
+This is the source code of the [Apuify](https://telegram.me/apuify_bot) Telegram
 bot.
 
 The bot is pretty simple, just listens for photos, downloads them, search for
 human front faces and *replaces* them with a doge.
 
-Please rate it following this [link](https://telegram.me/storebot?start=dogefy_bot)
+Please rate it following this [link](https://telegram.me/storebot?start=apuify_bot)
 
 ## Requirements
 You need the python [`pyTelegramBotAPI`](https://github.com/eternnoir/pyTelegramBotAPI)
@@ -35,7 +35,7 @@ pacman -S opencv
 ## Usage
 
 ```
-DOGEFY_TKN="123456789:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" python2 dogefybot.py
+DOGEFY_TKN="123456789:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" python2 apuifybot.py
 # if you have python3 as default you should use python2
 ```
 

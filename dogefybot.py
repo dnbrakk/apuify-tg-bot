@@ -41,8 +41,8 @@ clahe_clip = 3.0
 clahe_tile = (8, 8)
 
 
-# Dogefy magic happens here (very wow, such magic, many pattern recognition)
-def dogefy(img_file):
+# Apuify magic happens here (very wow, such magic, many pattern recognition)
+def apuify(img_file):
     # Initialize the classifier with the frontal face haar cascades
     face_cc = cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 
@@ -65,7 +65,7 @@ def dogefy(img_file):
                                      minSize=cc_min_size,
                                      flags=cc_flags)
 
-    # Dogefy all the faces!
+    # Apuify all the faces!
     for (x, y, w, h) in faces:
         # Resize the doge according to the face
         doge_res = cv2.resize(img_doge, (w, h))
@@ -107,8 +107,8 @@ def handle_photo(m):
     with open(f_id, 'wb') as f:
         f.write(f_download)
 
-    # Dogefy all the faces!!
-    n_faces = dogefy(f_id)
+    # Apuify all the faces!!
+    n_faces = apuify(f_id)
 
     if n_faces > 0:
         # Send "uploading photo" action since can take a few seconds
@@ -148,7 +148,7 @@ def handle_start_help(m):
                      ("Hi, I search for faces in sent photos and if I find "
                       "any I replace them for *doges*. _Very wow._"
                       "\n\nPlease rate me at the @storebot following this "
-                      "link: https://telegram.me/storebot?start=dogefy\_bot\n"
+                      "link: https://telegram.me/storebot?start=apuify\_bot\n"
                       "\nQ: Why do I need _access to messages_?\n"
                       "A: In order to get images sent to groups I need it. "
                       "I don't like it either, I would prefer a system where "
@@ -156,7 +156,7 @@ def handle_start_help(m):
                       "_get-image_, _send-image_, _get-audio_, _send-audio_, "
                       "...\n"
                       "\nThe source code is licensed under _GPLv3_ and can be "
-                      "found at https://github.com/skgsergio/dogefy-tg-bot"),
+                      "found at https://github.com/skgsergio/apuify-tg-bot"),
                      disable_web_page_preview=True,
                      parse_mode="Markdown")
 
